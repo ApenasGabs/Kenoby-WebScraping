@@ -1,0 +1,11 @@
+{
+  "name": "Knoby-WebScraping",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Apenasgabs/Knoby-WebScraping.git",
+  "author": "Apenasgabs <gabers357@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "puppeteer": "^10.1.0"
+  }
+}
