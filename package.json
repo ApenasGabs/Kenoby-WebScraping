@@ -1,11 +1,21 @@
 {
-  "name": "Knoby-WebScraping",
+  "name": "Kenoby-WebScraping",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "https://github.com/Apenasgabs/Knoby-WebScraping.git",
+  "repository": "https://github.com/Apenasgabs/Kenoby-WebScraping.git",
+  "scripts": {
+    "start": "nodemon sever.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "author": "Apenasgabs <gabers357@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "axios": "^0.21.1",
+    "consign": "^0.1.6",
+    "express": "^4.17.1",
     "puppeteer": "^10.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
   }
 }
