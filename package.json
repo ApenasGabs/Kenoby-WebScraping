@@ -4,7 +4,7 @@
   "main": "index.js",
   "repository": "https://github.com/Apenasgabs/Kenoby-WebScraping.git",
   "scripts": {
-    "start": "nodemon sever.js",
+    "start": "nodemon pages/sever.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Apenasgabs <gabers357@gmail.com>",
