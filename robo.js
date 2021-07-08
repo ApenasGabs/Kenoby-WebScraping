@@ -1,14 +1,9 @@
 const puppeteer = require("puppeteer");
-// async function tes() {
-//   let a = 2;
-//   let b = 3;
-//   const c = (await a) + b;
-//   return console.log(c);
-// }
-
 async function robo() {
   console.log("1");
-  const browser = await puppeteer.launch();
+  const browser = await puppeteer.launch({
+    headless: false,
+  });
   console.log("2");
   const page = await browser.newPage();
   console.log("3");
