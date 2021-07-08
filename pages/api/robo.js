@@ -2,7 +2,7 @@ const puppeteer = require("puppeteer");
 async function robo() {
   console.log("1");
   const browser = await puppeteer.launch({
-    headless: false,
+    headless: true,
   });
   console.log("2");
   const page = await browser.newPage();
