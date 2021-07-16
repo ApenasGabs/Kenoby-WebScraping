@@ -1,16 +1,21 @@
 const axios = require("axios");
 const cheerio = require("cheerio");
+async function app(){
+  for await (symbol of symbols){
+    const vaga = await fetchData(symbol);
+    console.log({symbol,vaga});
+  }
 
+}
 const fetchData = async (url) => {
   const result = await axios.get(url);
   return result.data;
 };
 
 const robo =() => {
-  const moedaBase = "dolar",
-    moedaFinal = "real";
+  
   const content = fetchData(
-    `https://www.google.com/search?q=${moedaBase}+para+${moedaFinal}`
+    `https://jobs.kenoby.com/${moedaFinal}`
   );
   const $ = cheerio.load(content);
   const texto = $(".a61j6.vk_gy.vk_sh.Hg3mWc").text();
